@@ -1,13 +1,8 @@
-%% LA9
+%% Example of Exact / Approx Comparison with LATEX labeling
 
 clear all
 close all
 clc
-
-% varepsilon = sym('varepsilon');
-% C = sym('C');
-% syms t;
-% T1 = taylor((-1/sqrt(exp(2*t)*C+varepsilon)))
 
 vareps = 0.01
 
@@ -21,7 +16,7 @@ hold on
 plot(t,approx,'-r')
 xline(0)
 yline(0)
-xlabel('t','FontSize',16)
-ylabel('y','FontSize',16)
-title('Approximation vs Exact of dy/dt + y = \epsilon y^3','FontSize',16)
+xlabel('t','FontSize',16,'interpreter','latex')
+ylabel('y','FontSize',16,'interpreter','latex')
+title('Approximation vs Exact of $dy/dt + y = \epsilon y^3$','FontSize',16,'interpreter','latex')
 hold off

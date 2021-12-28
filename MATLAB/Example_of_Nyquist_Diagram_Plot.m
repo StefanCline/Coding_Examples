@@ -1,4 +1,4 @@
-%% HW_6_Nyquist_tau_critical
+%% Nyquist Plot with Tau Critical
 
 close all;
 clear all;

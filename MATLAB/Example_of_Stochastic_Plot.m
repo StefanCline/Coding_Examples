@@ -1,3 +1,5 @@
+%% Stochastic Plot Solved Example
+
 function ou
 
 close all

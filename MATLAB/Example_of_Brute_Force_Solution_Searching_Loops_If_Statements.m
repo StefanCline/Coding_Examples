@@ -1,4 +1,9 @@
-%% HW6_CHAOS
+%% Brute Force Example
+
+% Here, a specific type of relationship is desired from two function types.
+% Therefore, a brute force method is used to check for simple polynomial
+% solutions between them. If solutions can be found, the answers are
+% displayed. Also, trivial answers are ignored. 
 
 close all;
 clear all;

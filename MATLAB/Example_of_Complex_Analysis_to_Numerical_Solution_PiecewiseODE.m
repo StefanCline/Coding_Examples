@@ -1,32 +1,22 @@
-clear all; 
-close all;
-clc
+%% Numerically Solving for (note, could also be done using LAPALCE): 
 
-% a = sym('a');
-% b = sym('b');
-% c = sym('c');
-% d = sym('d');
-% e = sym('e');
-% f = sym('f');
-% g = sym('g');
-% h = sym('h');
-% j = sym('j');
-% 
-% A = [a b; c d]
-% A2 = [a b c; d e f; g h j];
-% A3 = [.1 .1 .1; .1 .1 .1; .1 .1 .1]
-% I1 = eye(2);
-% I2 = eye(3);
-% % Output = (I-A)*((A-I)+(A^2-I)+(A^3-I)+(A^4-I)+(A^5-I)+(A^6-I)+(A^7-I)+(A^8-I)+(A^9-I)+(A^10-I)+(A^11-I)+(A^12-I))
-% % norm(Output,1)
-% % norm(Output,2)
-% % norm(Output,inf)
-% 
-% inv(I1-A)
-% inv(I2-A2)
-% inv(I2-A3)
+% eps*y' + y = f(t/eps), y(0)=y0
+% f(xi) is periodic with period T, i.e. f(xi+T)=f(xi) on [0,T]
+% f(xi) = 1 when 0 <= xi < T/2
+%       = 0 when T/2 <= xi < T
 
-%% Number 1
+
+
+% The below is the iterative work used to then develop the general looping
+% structure. Note that the equation was originally solved by first
+% determining a solution to the ODE for the first half, then the second,
+% then combining them at the 'hand off' point at T/2. To then find
+% iterations beyond the first period it becomes messy and symbolic math
+% fails us in terms of being friendly. This is when this algorithm is used
+% below. The zig zag nature of the solution is the result of forcing
+% continuity onto the system. 
+
+
 
 % tspan = [0 .05];
 % y0 = 0;
@@ -128,36 +118,3 @@ while n < endset
     n = n + 1;
 end 
 
-
-
-% s = sym('s');
-% T = 17;
-% F = -exp(-T*s)/(s);
-% F2 = 1/s
-% ilaplace(F)
-% ilaplace(F2)
-
-%% Problem 1
-% eps = sym('eps');
-% y_0 = sym('y_0');
-% T = sym('T');
-% syms s;
-% F1 = 1/(eps*s^2+s);
-% F2 = 1/(eps*s+1);
-% F3 = 1/s^2*((1-exp(-s*(T/2)))/(1-exp(-s*T)))+y_0/s
-% ilaplace(F1)
-% ilaplace(F2)
-% ilaplace(F3)
-
-
-%% Problem 5
-% 
-% syms y1(t) y2(t)
-% 
-% A = [0 1; 3/(t^2), 1/t];
-% B = [-16*t^2; 8*t]
-% Y = [y1;y2];
-% C = Y(1) == [4;-2]
-% odes = diff(Y) == A*Y + B
-% 
-% [y1Sol(t),y2Sol(t)] = dsolve(odes,C)

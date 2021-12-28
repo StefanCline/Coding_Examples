@@ -1,4 +1,4 @@
-% Lecture_Activity_5
+%% Basic Matrix Operations
 
 clear all
 clc

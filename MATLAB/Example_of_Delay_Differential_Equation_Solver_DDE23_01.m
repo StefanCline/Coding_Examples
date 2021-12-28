@@ -1,5 +1,12 @@
 %% Homework_6_Math_636
 
+% This section shows how to use the delay differential equation functions
+% by setting lags, we go back one unit of time
+% tf is the ending point of the iterations
+% each sol'N' = equation solves using the delay differential equation
+% solver or dde23, and @yhist is from the deval(solN,t) where this solving
+% of the equation becomes the historical required solving values of the dde
+
 clc;
 clear all; 
 close all; 

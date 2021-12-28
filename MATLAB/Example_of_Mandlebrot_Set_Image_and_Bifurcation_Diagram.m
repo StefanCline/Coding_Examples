@@ -1,4 +1,15 @@
-%% Chaos Midterm Sheet
+%% Bifurcation Diagram and Mandelbrot Set
+
+% This code produces the famous mandelbrot set. If desired, one can change
+% the resolution cap to different values. The best item to toggle in the
+% set is the "cap_res" number below. Lower values yield results faster, but
+% are lower quality images, higher values yeild higher quality images, but
+% take longer to produce. (Note: the grid is a capres x capres size square
+% image.)
+
+% Also, the red produced on the graph is the bifurcation diagram. One can
+% observe shape changes at the locations of a bifurctation i.e. split from
+% one line to two at any point in the graph. 
 
 close all;
 clear all;
@@ -51,7 +62,7 @@ while Y < (cap_res+1)
     end
 %     cap_res - Y
 end
-image(a_vals,b_vals,plotmat')
+image(-a_vals,b_vals,plotmat')
 
 Niterates   = 700;
 Nc     = 1000;

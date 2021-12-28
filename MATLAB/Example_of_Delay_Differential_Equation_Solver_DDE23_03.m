@@ -1,4 +1,6 @@
-%HW 6 Problem 2 Simulation Using Delays
+%% DDE23 Solver Solution
+
+% see Example of DDE23 #01 in files for explanation of code
 
 function Delay_Model_HW_6;
 

@@ -1,38 +1,38 @@
-%% Midterm Take Home Math Models 636
+%% Regions of Stability with Hopf bifurcations
 
 clear all;
 close all;
 clc
 
-% xline(-1,'--b');
-% xlabel('a','FontSize',18);
-% ylabel('mu','FontSize',18);
-% title('(mu,a) plane','FontSize',18);
-% hold on 
-% a = linspace(-1.5,1.5,400);
-% mu1 = 2./(a.^2-1);
-% mu2 = -2./(a.^2-1);
-% plot(a,mu1,'--g');
-% plot(a,mu2,'--g');
-% yline(0,'--b');
-% xline(1,'--b');
-% xline(0,'-k');
-% hold off
-% 
-% a_mt  = [-2; -1.1; -0.9;  0; 1.1;  2; -2;   -1.1;  -0.9;   0;  1.1;   2];
-% mu_mt = [10;   .1;   .1; 10;  .1; 10; -10;   -.1;   -.1; -10;  -.1; -10];
-% n = 1;
-% while n < 13
-%     lam_1 = (-mu_mt(n)*(a_mt(n)^2-1)+sqrt((mu_mt(n)*a_mt(n)^2-mu_mt(n))^2-4))/2;
-%     disp('Lambda 1 for area')
-%     n
-%     disp(lam_1)
-%     lam_2 = (-mu_mt(n)*(a_mt(n)^2-1)-sqrt((mu_mt(n)*a_mt(n)^2-mu_mt(n))^2-4))/2;
-%     disp('Lambda 2 for area')
-%     n
-%     disp(lam_2)
-%     n = n + 1;
-% end 
+xline(-1,'--b');
+xlabel('a','FontSize',18);
+ylabel('mu','FontSize',18);
+title('(mu,a) plane','FontSize',18);
+hold on 
+a = linspace(-1.5,1.5,400);
+mu1 = 2./(a.^2-1);
+mu2 = -2./(a.^2-1);
+plot(a,mu1,'--g');
+plot(a,mu2,'--g');
+yline(0,'--b');
+xline(1,'--b');
+xline(0,'-k');
+hold off
+
+a_mt  = [-2; -1.1; -0.9;  0; 1.1;  2; -2;   -1.1;  -0.9;   0;  1.1;   2];
+mu_mt = [10;   .1;   .1; 10;  .1; 10; -10;   -.1;   -.1; -10;  -.1; -10];
+n = 1;
+while n < 13
+    lam_1 = (-mu_mt(n)*(a_mt(n)^2-1)+sqrt((mu_mt(n)*a_mt(n)^2-mu_mt(n))^2-4))/2;
+    disp('Lambda 1 for area')
+    n
+    disp(lam_1)
+    lam_2 = (-mu_mt(n)*(a_mt(n)^2-1)-sqrt((mu_mt(n)*a_mt(n)^2-mu_mt(n))^2-4))/2;
+    disp('Lambda 2 for area')
+    n
+    disp(lam_2)
+    n = n + 1;
+end 
 
 %% Hopf Plot
 

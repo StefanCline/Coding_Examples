@@ -1,4 +1,4 @@
-% Math Models 5 HW
+%% Complex Solving Example 2
 
 clear all
 clc
@@ -16,5 +16,5 @@ L = sym('L');
 A = [a-L, 0; 0, -k-L];
 det(A)
 
-% DF = [-k+lam*F-2*sig*S, -lam*S; -c*F, a-2*b*F-c*S]
-% [v,d]=eig(DF)
+DF = [-k+lam*F-2*sig*S, -lam*S; -c*F, a-2*b*F-c*S]
+[v,d]=eig(DF)

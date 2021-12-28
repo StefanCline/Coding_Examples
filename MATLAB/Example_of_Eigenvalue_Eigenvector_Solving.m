@@ -1,4 +1,4 @@
-%HW 3 matlab assist
+%% Eigenvalue / Vector solving 
 
 close all;
 clear all; 

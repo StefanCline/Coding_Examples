@@ -1,4 +1,4 @@
-% Chaos HW5
+%% Bifurcation with plot
 
 close all;
 clear all;

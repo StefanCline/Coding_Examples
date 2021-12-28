@@ -1,4 +1,6 @@
-%% Homework_6_Math_636_problem_2.2
+%% DDE23 Solver Solution
+
+% see Example of DDE23 #01 in files for explanation of code
 
 clc;
 clear all; 

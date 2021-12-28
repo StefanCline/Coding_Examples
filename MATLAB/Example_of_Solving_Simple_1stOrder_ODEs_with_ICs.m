@@ -1,6 +1,4 @@
-% Problem 4 & 5
-
-%% Problem 4
+%% Solving Simple ODEs
 
 clear all; 
 close all; 

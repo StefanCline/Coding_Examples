@@ -1,11 +1,8 @@
-%% LA_8 ODES & WebWork
+%% Dsolve Example
 
 close all;
 clear all;
 clc
-
-% p = [1, 6, 12, 8];
-% roots(p)
 
 syms y(x);
 Dy = diff(y);
