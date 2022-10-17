@@ -21,7 +21,7 @@ n = 1;
 yline(0)
 hold on
 xline(0)
-cap_res = 2000;
+cap_res = 5000;
 a_vals = linspace(-1.5,2.4,cap_res);
 b_vals = linspace(-2,2,cap_res);
 z_cur = 0+0*i;
