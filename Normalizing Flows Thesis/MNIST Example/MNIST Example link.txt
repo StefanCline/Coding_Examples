@@ -1,0 +1,3 @@
+MNIST Example: 
+
+https://colab.research.google.com/drive/1Coo7lFB42eiZ46WeNFKyjz_i4ZnkzBjW?authuser=1

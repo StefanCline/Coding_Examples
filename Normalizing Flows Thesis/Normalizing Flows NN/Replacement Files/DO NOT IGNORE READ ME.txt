@@ -1,0 +1,13 @@
+About this folder: 
+
+The following three files are required if one wants to be able to run the code in this repository. 
+
+There is an assumption being made that you have downloaded CUDA and are attempting to run your code off of a GPU.
+
+While running:
+	adam.py
+	spline.py
+	transformed_distribution.py
+
+the files will generate errors saying that there is a CPU/GPU mismatch. These files make simple fixes to those errors by forcing certain variables to go to the GPU by saying 
+	variable.to('cuda')
